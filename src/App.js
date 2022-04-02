@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Card from "./Components/Card";
+import Navbar from "./Components/Navbar";
 
 class App extends Component {
   constructor(props) {
@@ -11,7 +12,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Hello React App</h1>
+        <Navbar />
+        <h1>Scoir For High School</h1>
         <Card />
         <Card />
         <Card />
