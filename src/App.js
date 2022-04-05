@@ -14,9 +14,16 @@ class App extends Component {
       <div className="App">
         <Navbar />
         <h1>Scoir For High School</h1>
-        <Card />
-        <Card />
-        <Card />
+        <div className="grid-container">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
       </div>
     );
   }
