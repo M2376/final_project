@@ -5,7 +5,7 @@ const styling = {
 };
 
 function Card(props) {
-  console.log(props);
+  //console.log(props);
   return (
     <div class="card" style={styling}>
       <img
@@ -16,12 +16,11 @@ function Card(props) {
       <div class="card-body">
         <h5 class="card-title">{props.name}</h5>
         <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          {props.data.school_name}
+          {props.data.school_dbn}
+          {props.data.program_code}
+          {props.data.selection_criteria}
         </p>
-        <a href="" class="btn btn-primary">
-          Go somewhere
-        </a>
       </div>
     </div>
   );

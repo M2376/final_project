@@ -6,23 +6,34 @@ import Navbar from "./Components/Navbar";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      data: []
+    };
   }
+  //Component
+  componentDidMount = () => {
+    fetch(
+      "https://data.cityofnewyork.us/resource/9gs9-zhxw.json?$$app_token=vPPT8zahqHN2TohMNpmqqsiYQ"
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        this.setState({ data: data });
+        console.log(this.state.data);
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  };
 
   render() {
     return (
       <div className="App">
         <Navbar />
         <h1>Scoir For High School</h1>
-        <div className="grid-container">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+        <div className="grid">
+          {this.state.data.map((data) => (
+            <Card data={data} />
+          ))}
         </div>
       </div>
     );
