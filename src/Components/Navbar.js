@@ -41,7 +41,12 @@ function Navbar() {
             placeholder="Search by School Number"
             aria-label="Search"
           />
-          <button className="btn btn-outline-danger my-2 my-sm-0" type="submit">
+          <button
+            className="btn btn-outline-danger my-2 my-sm-0"
+            onClick={() => {
+              console.log("HI");
+            }}
+          >
             Search
           </button>
         </form>

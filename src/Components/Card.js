@@ -16,9 +16,22 @@ function Card(props) {
       <div class="card-body">
         <h5 class="card-title">{props.name}</h5>
         <p class="card-text">
+          School Name:
           {props.data.school_name}
+        </p>
+
+        <p class="card-text">
+          School DBN:
           {props.data.school_dbn}
+        </p>
+
+        <p class="card-text">
+          School Program Code:
           {props.data.program_code}
+        </p>
+
+        <p class="card-text">
+          School Selection Criteria:
           {props.data.selection_criteria}
         </p>
       </div>
