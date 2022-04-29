@@ -14,7 +14,7 @@
   width: calc(20vw - 4em);
   margin: 1em;
   padding: 1em;
-  background-color: rgb(78, 128, 152);
+  background-color: rgb(246, 189, 96);
   display: inline-block;
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -22,5 +22,5 @@
 }
 
 .card-text {
-  color: rgb(9, 35, 39);
+  color: rgb(49, 61, 58);
 }
