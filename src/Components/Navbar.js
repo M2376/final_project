@@ -33,6 +33,16 @@ function Navbar() {
           <li className="nav-item">
             <button className="nav-link">Data</button>
           </li>
+          <li className="nav-item">
+            <button
+              className="btn btn-outline-danger my-2 my-sm-0"
+              onClick={() => {
+                console.log("HI");
+              }}
+            >
+              Graph
+            </button>
+          </li>
         </ul>
         <form className="form-inline my-2 my-lg-0">
           <input

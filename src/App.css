@@ -1,6 +1,7 @@
 `.App {
   text-align: center;
 }
+
 .navbar button {
   border: none;
   background: rgba(0, 0, 0, 0);
@@ -8,6 +9,9 @@
 
 .navbar button:focus {
   outline: 0;
+}
+
+.navbar {
 }
 
 .card {
