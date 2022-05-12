@@ -34,8 +34,20 @@ function Navbar() {
             <button className="nav-link">Data</button>
           </li>
           <li className="nav-item">
+            <button className="nav-link">Comments</button>
+          </li>
+          <li className="nav-item">
+            <button className="nav-link">Links</button>
+          </li>
+          <li className="nav-item">
+            <button className="nav-link">Why Scoir?</button>
+          </li>
+          <li className="nav-item">
+            <button className="nav-link">Apply</button>
+          </li>
+          <li className="nav-item">
             <button
-              className="btn btn-outline-danger my-2 my-sm-0"
+              className="nav-link"
               onClick={() => {
                 console.log("HI");
               }}

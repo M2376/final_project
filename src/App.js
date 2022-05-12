@@ -29,8 +29,9 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <h1>Scoir For High School</h1>
+        <h1>HighScoir</h1>
         <div className="grid">
+          {console.log(this)}
           {this.state.data.map((data) => (
             <Card data={data} />
           ))}
