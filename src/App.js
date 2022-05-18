@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import "./App.css";
 import Card from "./Components/Card";
 import Navbar from "./Components/Navbar";
-
+import Carousel from "./Components/Carousel";
+import { VictoryBar, VictoryChart, VictoryAxis } from "victory";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -30,11 +31,23 @@ class App extends Component {
       <div className="App">
         <Navbar />
         <h1>HighScoir</h1>
+        <Carousel />
         <div className="grid">
           {console.log(this)}
           {this.state.data.map((data) => (
             <Card data={data} />
           ))}
+        </div>
+        <div id="Data" style={{ height: 500 }}>
+          <h1>Data visiualization</h1>
+
+          <VictoryChart>
+            <VictoryBar
+              data={this.state.data}
+              x="SchoolName"
+              y="ExceptanceRate"
+            />
+          </VictoryChart>
         </div>
       </div>
     );
