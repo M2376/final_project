@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 import Card from "./Components/Card";
 import Navbar from "./Components/Navbar";
 import Carousel from "./Components/Carousel";
 import { VictoryBar, VictoryChart, VictoryAxis } from "victory";
-class App extends Component {
+class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -13,9 +13,7 @@ class App extends Component {
   }
   //Component
   componentDidMount = () => {
-    fetch(
-      "https://data.cityofnewyork.us/resource/9gs9-zhxw.json?$$app_token=vPPT8zahqHN2TohMNpmqqsiYQ"
-    )
+    fetch("https://data.cityofnewyork.us/resource/9gs9-zhxw.json?$limit=20")
       .then((response) => response.json())
       .then((data) => {
         this.setState({ data: data });
