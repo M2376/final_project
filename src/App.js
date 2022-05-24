@@ -3,7 +3,8 @@ import "./App.css";
 import Card from "./Components/Card";
 import Navbar from "./Components/Navbar";
 import Carousel from "./Components/Carousel";
-import { VictoryBar, VictoryChart, VictoryAxis } from "victory";
+import Product from "./Components/Data";
+//import { VictoryBar, VictoryChart, VictoryAxis } from "victory";
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -38,14 +39,7 @@ class App extends React.Component {
         </div>
         <div id="Data" style={{ height: 500 }}>
           <h1>Data visiualization</h1>
-
-          <VictoryChart>
-            <VictoryBar
-              data={this.state.data}
-              x="SchoolName"
-              y="ExceptanceRate"
-            />
-          </VictoryChart>
+          <Product />
         </div>
       </div>
     );
