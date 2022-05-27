@@ -31,29 +31,42 @@ function Navbar() {
             </button>
           </li>
           <li className="nav-item">
-            <button className="nav-link">Data</button>
+            <a href="/Data">
+              {" "}
+              <button className="nav-link">Data</button>{" "}
+            </a>
           </li>
           <li className="nav-item">
-            <button className="nav-link">Comments</button>
+            <a href="/Comments">
+              <button className="nav-link">Comments</button>
+            </a>
           </li>
           <li className="nav-item">
-            <button className="nav-link">Links</button>
+            <a href="/Links">
+              <button className="nav-link">Links</button>
+            </a>
           </li>
           <li className="nav-item">
-            <button className="nav-link">Why Scoir?</button>
+            <a href="/WhyScoir?">
+              <button className="nav-link">Why Scoir?</button>
+            </a>
           </li>
           <li className="nav-item">
-            <button className="nav-link">Apply</button>
+            <a href="/Apply">
+              <button className="nav-link">Apply</button>
+            </a>
           </li>
           <li className="nav-item">
-            <button
-              className="nav-link"
-              onClick={() => {
-                console.log("HI");
-              }}
-            >
-              Graph
-            </button>
+            <a href="/Graph">
+              <button
+                className="nav-link"
+                onClick={() => {
+                  console.log("HI");
+                }}
+              >
+                Graph
+              </button>
+            </a>
           </li>
         </ul>
         <form className="form-inline my-2 my-lg-0">

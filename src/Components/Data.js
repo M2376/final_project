@@ -34,6 +34,7 @@ function Product() {
 
   return (
     <div>
+      <h1> Data Visualization </h1>
       <div>
         <button onClick={handleClick} id="M">
           Manhattan

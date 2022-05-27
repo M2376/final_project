@@ -1,6 +1,6 @@
 import React from "react";
 
-function Test() {
+function Graph() {
   return (
     <>
       <h1>
@@ -13,4 +13,4 @@ function Test() {
   );
 }
 
-export default Test;
+export default Graph;

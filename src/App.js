@@ -3,7 +3,7 @@ import "./App.css";
 import Card from "./Components/Card";
 import Navbar from "./Components/Navbar";
 import Carousel from "./Components/Carousel";
-import Product from "./Components/Data";
+
 //import { VictoryBar, VictoryChart, VictoryAxis } from "victory";
 class App extends React.Component {
   constructor(props) {
@@ -36,10 +36,6 @@ class App extends React.Component {
           {this.state.data.map((data) => (
             <Card data={data} />
           ))}
-        </div>
-        <div id="Data" style={{ height: 500 }}>
-          <h1>Data visiualization</h1>
-          <Product />
         </div>
       </div>
     );
